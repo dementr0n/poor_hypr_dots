@@ -1,0 +1,65 @@
+* {
+    font-family: "JetBrains Mono", "Font Awesome 6 Free";
+    font-size: 12px;
+}
+
+window#waybar {
+    background: rgba(17, 17, 27, 0.8);
+    color: #cdd6f4;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+#workspaces button {
+    color: #585b70;
+    padding: 0 8px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    background: rgba(53, 5, 82, 0.6);
+    color: #cba6f7;
+}
+
+#clock {
+    background: rgba(53, 5, 82, 0.4);
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#battery {
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    background: rgba(30, 30, 46, 0.5);
+}
+
+#tray {
+    margin-right: 8px;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#custom-menu {
+    background: linear-gradient(-45deg, #350582, #8839ef, #cba6f7);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    padding: 0 16px;
+    margin-left: 8px;
+    border-radius: 8px 0 0 8px;
+}
+#custom-keyboard {
+    color: #cba6f7;
+    margin: 0 10px;
+    font-weight: bold;
+}
